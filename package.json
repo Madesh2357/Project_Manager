@@ -1,0 +1,14 @@
+{
+  "name": "project-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project Management System - full-stack monorepo",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "db:push": "cd backend && npx prisma db push",
+    "db:studio": "cd backend && npx prisma studio",
+    "test": "cd backend && npm test"
+  }
+}
